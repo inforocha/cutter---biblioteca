@@ -94,9 +94,12 @@ class Extrator {
 		$chave_cutter = '';
 		// comparando o nome do autor com todos os nomes do enum para pegar uma correspondencia.
 		foreach ($autores as $value) {
+			// transformamos em minusculas para evitar erros de comparação caso o usuario informe o autor diferente do padrao.
+			$autor_enum_minusculo = strtolower($value);
+			$autor_obra_minusculo = strtolower($autor);
 			// aqui verifico com e sem o ponto porque nao sei se o cliente ira consultar utilizando o ponto no nome.
 			// ex: 'Robinson, D.' e 'Robinson, D' serao considerados iguais
-			if ($value == $autor || "{$value}." == $autor) {
+			if ($autor_enum_minusculo == $autor_obra_minusculo || "{$autor_enum_minusculo}." == $autor_obra_minusculo) {
 				$chave_cutter = $value;
 			}
 		}

@@ -1,6 +1,6 @@
 # CUTTER
 
-# VERSÃO 1.0
+# VERSÃO 1.1
 
 artigo para a base deste resumo: https://biblioteconomia.ufes.br/sites/biblioteconomia.ufes.br/files/field/anexo/2_1_0_NoChamada.pdf
 https://processotecnicoucs.wordpress.com/decisoes/cutter/
